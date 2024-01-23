@@ -80,16 +80,3 @@ export default function createPassword(options: PasswordOptions): string {
 
   return password;
 }
-
-console.log(
-  createPassword({
-    length: 10,
-    includeCharacters: {
-      lowercase: true,
-      uppercase: true,
-      number: true,
-      symbol: false,
-    },
-    excludeMistakableCharacters: true,
-  })
-);
